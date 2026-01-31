@@ -8,14 +8,14 @@
 
 <style>
 body{
-    background:#1a1a1a;
+    background:#141414;
     margin:0;
     padding:50px 0;
     font-family:'Cormorant Garamond', serif;
 }
 
 .video{
-    max-width:820px;
+    max-width:850px;
     margin:0 auto 40px;
 }
 
@@ -26,28 +26,57 @@ iframe{
 }
 
 .libro{
-    max-width:820px;
+    max-width:850px;
     margin:auto;
     position:relative;
+    overflow:hidden;
 }
 
 .pagina{
     background:#fbf6ec;
-    padding:90px 95px;
-    min-height:520px;
+    padding:90px 100px;
+    min-height:560px;
     box-shadow:0 25px 60px rgba(0,0,0,0.6);
-    display:none;
+    position:absolute;
+    top:0;
+    left:100%;
+    opacity:0;
+    transition:all 0.8s ease;
 }
 
 .pagina.activa{
-    display:block;
+    left:0;
+    opacity:1;
+}
+
+.pagina.salida{
+    left:-100%;
+    opacity:0;
+}
+
+.portada{
+    background:#2c1f18;
+    color:#f5e6c8;
+    text-align:center;
+}
+
+.portada h1{
+    font-family:'Great Vibes', cursive;
+    font-size:4em;
+    margin-top:140px;
+}
+
+.portada h2{
+    font-weight:400;
+    margin-top:30px;
+    font-style:italic;
 }
 
 .titulo{
     font-family:'Great Vibes', cursive;
     font-size:3.6em;
     text-align:center;
-    margin-bottom:10px;
+    margin-bottom:15px;
     color:#3a2c22;
 }
 
@@ -60,30 +89,10 @@ iframe{
 
 p{
     font-size:1.35em;
-    line-height:2;
+    line-height:2.05;
     color:#2f241c;
     text-align:justify;
     margin-bottom:34px;
-}
-
-.controles{
-    text-align:center;
-    margin-top:30px;
-}
-
-button{
-    background:none;
-    border:none;
-    font-family:'Cormorant Garamond', serif;
-    font-size:1.1em;
-    letter-spacing:2px;
-    margin:0 20px;
-    cursor:pointer;
-    color:#6a1b9a;
-}
-
-button:hover{
-    text-decoration:underline;
 }
 
 .frase-final{
@@ -92,6 +101,26 @@ button:hover{
     font-size:1.5em;
     font-style:italic;
     color:#e6c94f;
+}
+
+.controles{
+    text-align:center;
+    margin-top:640px;
+}
+
+button{
+    background:none;
+    border:none;
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.15em;
+    letter-spacing:2px;
+    margin:0 25px;
+    cursor:pointer;
+    color:#6a1b9a;
+}
+
+button:hover{
+    text-decoration:underline;
 }
 
 .promesa{
@@ -114,26 +143,33 @@ button:hover{
 
 <div class="libro">
 
+<!-- PORTADA -->
+<div class="pagina portada activa">
+<h1>Un libro escrito para ti</h1>
+<h2>Porque hay amores que merecen más de una página</h2>
+</div>
+
 <!-- PAGINA 1 -->
-<div class="pagina activa">
+<div class="pagina">
 <div class="titulo">Mi amor</div>
 <div class="sub">Viernes, 30 de enero de 2026</div>
 
 <p>
-Hoy empiezo a escribirte como quien abre un libro sabiendo que no quiere llegar al final.
+Hoy empiezo a escribirte como se empiezan las historias que no se quieren terminar.
 Este viernes se siente distinto, más lento, más silencioso,
-porque cuando no te veo el tiempo parece caminar sin rumbo.
-Tu ausencia no es ruido, pero pesa,
+porque cuando no te veo, el tiempo parece perder su ritmo.
+Tu ausencia no hace ruido, pero pesa,
 y en ese peso descubro cuánto significas para mí.
 </p>
 
 <p>
-Me haces falta de una manera diaria, profunda, constante.
-No como un recuerdo pasajero,
+Me haces falta de una manera diaria, constante, profunda.
+No como un recuerdo lejano,
 sino como algo que se volvió parte de mi equilibrio,
-de mi forma de existir.
-Pensarte se volvió costumbre,
-y extrañarte, una consecuencia inevitable de amarte.
+de mi rutina,
+de mi manera de existir.
+Extrañarte no es una elección,
+es la consecuencia natural de amarte.
 </p>
 </div>
 
@@ -156,7 +192,7 @@ sino porque ahí estás tú.
 Porque volver significa saber que,
 aunque sean solo cuatro o cinco horas,
 voy a compartir el mismo espacio contigo,
-y eso, para mí, lo cambia todo.
+y eso para mí lo cambia todo.
 </p>
 
 <p>
@@ -171,8 +207,8 @@ que el amor también vive en lo cotidiano.
 <p>
 Extraño la rutina que solo contigo se vuelve especial.
 Extraño los días normales,
-porque contigo los días normales son extraordinarios.
-Extraño esa tranquilidad que aparece en mí
+porque contigo los días normales se sienten extraordinarios.
+Extraño la forma en que mi corazón se calma
 cuando sé que estás cerca,
 aunque no digamos nada.
 </p>
@@ -181,7 +217,7 @@ aunque no digamos nada.
 Hay algo profundamente hermoso en amarte así,
 en silencio,
 en lo simple,
-en lo que no necesita ser mostrado.
+en lo que no necesita ser visto.
 Ahí es donde entiendo
 que este amor es real,
 porque no depende del ruido,
@@ -208,29 +244,15 @@ Bésame con la certeza
 de que no hay prisa,
 pero sí intención.
 </p>
-</div>
-
-<!-- PAGINA 5 -->
-<div class="pagina">
-<p>
-Te amo sin ruido,
-pero con profundidad.
-Te amo con un amor que no se cansa,
-que no duda,
-que no busca en otro lado.
-Te amo con la calma
-de quien sabe que no necesita más.
-</p>
 
 <p>
-Si supieras cuántas veces te pienso,
-cuántas veces imagino volver a verte,
-cuántas veces mi día mejora
-solo con recordar tu existencia.
+Porque cuando pienso en besarte,
+no pienso en un instante,
+pienso en quedarme.
 </p>
 </div>
 
-<!-- PAGINA 6 -->
+<!-- PAGINA FINAL -->
 <div class="pagina">
 <p>
 Este libro no busca un final,
@@ -267,22 +289,25 @@ sin excepción.
 let paginaActual = 0;
 const paginas = document.querySelectorAll('.pagina');
 
-function mostrarPagina(index){
-    paginas.forEach(p => p.classList.remove('activa'));
-    paginas[index].classList.add('activa');
+function mostrarPagina(nueva){
+    paginas[paginaActual].classList.remove('activa');
+    paginas[paginaActual].classList.add('salida');
+
+    paginas[nueva].classList.remove('salida');
+    paginas[nueva].classList.add('activa');
+
+    paginaActual = nueva;
 }
 
 function siguiente(){
     if(paginaActual < paginas.length - 1){
-        paginaActual++;
-        mostrarPagina(paginaActual);
+        mostrarPagina(paginaActual + 1);
     }
 }
 
 function anterior(){
     if(paginaActual > 0){
-        paginaActual--;
-        mostrarPagina(paginaActual);
+        mostrarPagina(paginaActual - 1);
     }
 }
 
