@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Un libro escrito para ti</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background: radial-gradient(circle at top, #2b0f1f, #0b0508);
+    font-family: "Georgia", serif;
+    color:#f5e9f0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.book{
+    width:90%;
+    max-width:420px;
+    background:#1a0c12;
+    border-radius:12px;
+    box-shadow:0 0 40px rgba(255,0,120,0.25);
+    overflow:hidden;
+}
+
+.video{
+    padding:10px;
+    background:#000;
+}
+iframe{
+    width:100%;
+    height:200px;
+    border-radius:8px;
+}
+
+.page{
+    display:none;
+    padding:25px;
+    min-height:420px;
+    animation: fade 0.6s ease;
+}
+
+.page.active{
+    display:block;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:translateX(20px);}
+    to{opacity:1; transform:translateX(0);}
+}
+
+h1,h2{
+    text-align:center;
+    color:#ffb6d5;
+}
+
+.cover{
+    text-align:center;
+}
+.cover h1{
+    font-size:28px;
+}
+.cover p{
+    margin-top:20px;
+    font-style:italic;
+    color:#f2cce0;
+}
+
+.text{
+    line-height:1.7;
+    text-align:justify;
+}
+
+.controls{
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+}
+
+button{
+    background:none;
+    border:none;
+    color:#c77dff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.final{
+    color:yellow;
+    text-align:center;
+    font-size:18px;
+    margin-top:20px;
+}
+
+.promise-btn{
+    display:block;
+    margin:25px auto 10px;
+    padding:10px 18px;
+    border-radius:20px;
+    border:none;
+    background:#ff77aa;
+    color:#1a0c12;
+    font-weight:bold;
+}
+
+.promise{
+    display:none;
+    text-align:center;
+    color:#b983ff;
+    margin-top:15px;
+    font-size:17px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/jJRvUOVxPqA" allowfullscreen></iframe>
+    </div>
+
+    <!-- PORTADA -->
+    <div class="page active cover">
+        <h1>Un libro escrito<br>solo para ti</h1>
+        <p>
+        Porque hay amores que no caben en cartas,<br>
+        y el mío por ti necesitaba un libro entero.
+        </p>
+    </div>
+
+    <!-- PAGINA 1 -->
+    <div class="page">
+        <h2>Página I</h2>
+        <div class="text">
+        Desde que llegaste a mi vida, los días dejaron de ser simples fechas en el calendario. 
+        Ahora cada mañana tiene tu nombre escondido entre mis pensamientos, y cada noche termina 
+        con tu recuerdo abrazándome el alma. A veces me sorprendo imaginando tu sonrisa mientras 
+        camino, como si el mundo entero se volviera más amable solo porque existes.
+        </div>
+    </div>
+
+    <!-- PAGINA 2 -->
+    <div class="page">
+        <h2>Página II</h2>
+        <div class="text">
+        Me hace falta verte a diario. Me hace falta tu voz cerca, tu risa rompiendo el silencio, 
+        tus gestos pequeños que solo yo noto. Hay días en los que el tiempo se vuelve pesado porque 
+        no estás frente a mí, porque no puedo mirarte aunque sea unos segundos. Y aun así, sigo 
+        contando las horas, soñando con el momento en que pueda verte otra vez.
+        </div>
+    </div>
+
+    <!-- PAGINA 3 -->
+    <div class="page">
+        <h2>Página III</h2>
+        <div class="text">
+        Anhelo volver a clases no por los libros ni por los horarios, sino por ti. Por verte aunque 
+        sea cuatro o cinco horas, por cruzar miradas en los pasillos, por sentir que el día tiene 
+        sentido solo porque estás ahí. Incluso los momentos más simples se vuelven eternos cuando 
+        estás cerca, y los recuerdos se quedan grabados como páginas que nunca quiero cerrar.
+        </div>
+    </div>
+
+    <!-- PAGINA 4 -->
+    <div class="page">
+        <h2>Página IV</h2>
+        <div class="text">
+        Hay noches en las que pienso en ti como quien piensa en un refugio. Tu amor se ha vuelto mi 
+        lugar seguro, mi calma cuando todo parece confuso. No sabes cuántas veces he sonreído solo 
+        al imaginar tu mirada, ni cuántas veces he sentido que mi corazón late distinto porque 
+        lleva tu nombre tatuado en cada latido.
+        </div>
+    </div>
+
+    <!-- PAGINA 5 -->
+    <div class="page">
+        <h2>Página V</h2>
+        <div class="text">
+        Si supieras lo mucho que te amo, tal vez entenderías por qué este libro no tiene final. 
+        Porque mi amor por ti no se gasta, no se cansa, no se termina. Crece con cada pensamiento, 
+        con cada recuerdo, con cada segundo que pasa sin verte y con cada instante que sueño 
+        volver a estar a tu lado.
+        </div>
+
+        <div class="final">
+            “Amarte es la historia más bonita que el destino decidió escribirme.”
+        </div>
+
+        <button class="promise-btn" onclick="showPromise()">Mi promesa del día</button>
+        <div class="promise" id="promise">
+            Prometo amarte incluso en los días en que no estemos cerca,<br>
+            cuidarte con palabras, respetarte con hechos<br>
+            y elegirte siempre, aun cuando el mundo se ponga difícil.
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="prev()">◀ Anterior</button>
+        <button onclick="next()">Siguiente ▶</button>
+    </div>
+
+</div>
+
+<script>
+let pages = document.querySelectorAll('.page');
+let index = 0;
+
+function showPage(i){
+    pages.forEach(p => p.classList.remove('active'));
+    pages[i].classList.add('active');
+}
+
+function next(){
+    if(index < pages.length -1){
+        index++;
+        showPage(index);
+    }
+}
+
+function prev(){
+    if(index > 0){
+        index--;
+        showPage(index);
+    }
+}
+
+function showPromise(){
+    document.getElementById("promise").style.display="block";
+}
+</script>
+
+</body>
+</html>
