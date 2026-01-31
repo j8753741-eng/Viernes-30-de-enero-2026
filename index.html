@@ -8,19 +8,15 @@
 
 <style>
 body{
-    background:#1b1b1b;
+    background:#1a1a1a;
     margin:0;
-    padding:60px 0;
+    padding:50px 0;
     font-family:'Cormorant Garamond', serif;
 }
 
-.libro{
-    max-width:820px;
-    margin:auto;
-}
-
 .video{
-    margin-bottom:60px;
+    max-width:820px;
+    margin:0 auto 40px;
 }
 
 iframe{
@@ -29,11 +25,22 @@ iframe{
     border:none;
 }
 
+.libro{
+    max-width:820px;
+    margin:auto;
+    position:relative;
+}
+
 .pagina{
     background:#fbf6ec;
-    padding:80px 90px;
-    margin-bottom:70px;
-    box-shadow:0 22px 50px rgba(0,0,0,0.6);
+    padding:90px 95px;
+    min-height:520px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.6);
+    display:none;
+}
+
+.pagina.activa{
+    display:block;
 }
 
 .titulo{
@@ -52,43 +59,45 @@ iframe{
 }
 
 p{
-    font-size:1.3em;
+    font-size:1.35em;
     line-height:2;
     color:#2f241c;
     text-align:justify;
-    margin-bottom:32px;
+    margin-bottom:34px;
 }
 
-.frase-final{
-    margin-top:50px;
+.controles{
     text-align:center;
-    font-size:1.5em;
-    font-style:italic;
-    color:#e6c94f;
-}
-
-.boton{
-    text-align:center;
-    margin-top:45px;
+    margin-top:30px;
 }
 
 button{
     background:none;
     border:none;
-    font-size:1.15em;
-    letter-spacing:2px;
-    color:#6a1b9a;
-    cursor:pointer;
     font-family:'Cormorant Garamond', serif;
+    font-size:1.1em;
+    letter-spacing:2px;
+    margin:0 20px;
+    cursor:pointer;
+    color:#6a1b9a;
 }
 
 button:hover{
     text-decoration:underline;
 }
 
+.frase-final{
+    margin-top:40px;
+    text-align:center;
+    font-size:1.5em;
+    font-style:italic;
+    color:#e6c94f;
+}
+
 .promesa{
     display:none;
-    margin-top:30px;
+    margin-top:25px;
+    text-align:center;
     font-size:1.35em;
     color:#6a1b9a;
     font-style:italic;
@@ -98,44 +107,33 @@ button:hover{
 
 <body>
 
-<div class="libro">
-
 <!-- VIDEO -->
 <div class="video">
 <iframe src="https://www.youtube.com/embed/jJRvUOVxPqA" allowfullscreen></iframe>
 </div>
 
+<div class="libro">
+
 <!-- PAGINA 1 -->
-<div class="pagina">
+<div class="pagina activa">
 <div class="titulo">Mi amor</div>
 <div class="sub">Viernes, 30 de enero de 2026</div>
 
 <p>
-Hoy empiezo a escribirte como se empiezan las historias que importan,
-con el corazón abierto y sin intención de terminar pronto.
-Este viernes se siente distinto,
-porque cuando no te veo,
-el tiempo se vuelve más lento
-y el silencio se llena de tu nombre.
+Hoy empiezo a escribirte como quien abre un libro sabiendo que no quiere llegar al final.
+Este viernes se siente distinto, más lento, más silencioso,
+porque cuando no te veo el tiempo parece caminar sin rumbo.
+Tu ausencia no es ruido, pero pesa,
+y en ese peso descubro cuánto significas para mí.
 </p>
 
 <p>
-Me haces falta de una manera diaria,
-constante,
-inevitable.
-No como un recuerdo lejano,
-sino como algo que forma parte de mi rutina,
-de mi equilibrio,
-de mi manera de existir.
-Tu ausencia no grita,
-pero pesa.
-</p>
-
-<p>
-Hay amores que se notan solo cuando están,
-pero el mío por ti se nota más cuando no te tengo cerca.
-Porque en tu ausencia descubro cuánto espacio ocupas en mi vida
-y cuánta calma me das cuando estás.
+Me haces falta de una manera diaria, profunda, constante.
+No como un recuerdo pasajero,
+sino como algo que se volvió parte de mi equilibrio,
+de mi forma de existir.
+Pensarte se volvió costumbre,
+y extrañarte, una consecuencia inevitable de amarte.
 </p>
 </div>
 
@@ -143,13 +141,12 @@ y cuánta calma me das cuando estás.
 <div class="pagina">
 <p>
 Me hace falta verte todos los días.
-Verte como quien necesita luz,
-como quien necesita aire.
-No importa si es de lejos,
-si es por unos minutos,
-si es solo cruzar miradas.
-Tu presencia ordena mis pensamientos
-y le da sentido a mis días.
+No como un lujo,
+sino como una necesidad.
+Verte aunque sea de lejos,
+aunque no podamos hablar,
+aunque solo crucemos miradas.
+Con eso basta para que mi día encuentre sentido.
 </p>
 
 <p>
@@ -158,15 +155,14 @@ No por los horarios ni las materias,
 sino porque ahí estás tú.
 Porque volver significa saber que,
 aunque sean solo cuatro o cinco horas,
-voy a compartir el mismo espacio contigo.
+voy a compartir el mismo espacio contigo,
+y eso, para mí, lo cambia todo.
 </p>
 
 <p>
-Cuatro o cinco horas que se me hacen cortas,
-pero suficientes para recordarme
-por qué te amo,
-por qué te espero,
-por qué sigo eligiéndote incluso en la distancia.
+Son pocas horas,
+pero son suficientes para recordarme
+que el amor también vive en lo cotidiano.
 </p>
 </div>
 
@@ -176,25 +172,20 @@ por qué sigo eligiéndote incluso en la distancia.
 Extraño la rutina que solo contigo se vuelve especial.
 Extraño los días normales,
 porque contigo los días normales son extraordinarios.
-Extraño la forma en que mi corazón se tranquiliza
-cuando sé que estás cerca.
-</p>
-
-<p>
-Extraño esa versión de mí que aparece cuando te veo:
-más paciente,
-más sincero,
-más vivo.
-Contigo no necesito fingir nada,
-porque tu presencia me permite ser.
+Extraño esa tranquilidad que aparece en mí
+cuando sé que estás cerca,
+aunque no digamos nada.
 </p>
 
 <p>
 Hay algo profundamente hermoso en amarte así,
-en lo cotidiano,
+en silencio,
 en lo simple,
-en lo que nadie más ve.
-Ahí es donde sé que este amor es real.
+en lo que no necesita ser mostrado.
+Ahí es donde entiendo
+que este amor es real,
+porque no depende del ruido,
+sino de la constancia.
 </p>
 </div>
 
@@ -205,23 +196,17 @@ Mientras suena “Bésame”,
 pienso en todo lo que deseo de ti.
 No solo en tus labios,
 sino en los besos que tranquilizan,
-los que prometen,
-los que se quedan.
+los que prometen quedarse,
+los que dicen “aquí estoy” sin palabras.
 </p>
 
 <p>
-Bésame en mis silencios,
-en mis días largos,
+Bésame en mis días cansados,
+en mis silencios,
 en mis esperas.
 Bésame con la certeza
 de que no hay prisa,
 pero sí intención.
-</p>
-
-<p>
-Porque cuando pienso en besarte,
-no pienso en un instante,
-pienso en quedarme.
 </p>
 </div>
 
@@ -231,22 +216,17 @@ pienso en quedarme.
 Te amo sin ruido,
 pero con profundidad.
 Te amo con un amor que no se cansa,
-que no se esconde,
-que no duda.
-</p>
-
-<p>
-Te amo con la calma de quien sabe
-que no necesita buscar en otro lado.
-Con la paciencia de quien entiende
-que lo verdadero se construye día a día.
+que no duda,
+que no busca en otro lado.
+Te amo con la calma
+de quien sabe que no necesita más.
 </p>
 
 <p>
 Si supieras cuántas veces te pienso,
 cuántas veces imagino volver a verte,
 cuántas veces mi día mejora
-solo con tu recuerdo.
+solo con recordar tu existencia.
 </p>
 </div>
 
@@ -261,23 +241,16 @@ volver a esperarte,
 volver a elegirte.
 </p>
 
-<p>
-Y mientras llega el momento de tenerte cerca,
-aquí me quedo,
-amándote desde donde esté,
-pero con el corazón completamente entregado.
-</p>
-
 <div class="frase-final">
-“Amarte no depende de la distancia, depende de mi decisión… y yo siempre te elijo.”
+“Amarte es una decisión que tomo todos los días, incluso cuando no estás cerca.”
 </div>
 
-<div class="boton">
+<div class="controles">
 <button onclick="mostrarPromesa()">MI PROMESA DEL DÍA</button>
 <div class="promesa" id="promesa">
 Prometo besarte con el alma,
 esperarte con el corazón
-y elegirte todos los días,
+y elegirte siempre,
 sin excepción.
 </div>
 </div>
@@ -285,9 +258,36 @@ sin excepción.
 
 </div>
 
+<div class="controles">
+<button onclick="anterior()">◀ ANTERIOR</button>
+<button onclick="siguiente()">SIGUIENTE ▶</button>
+</div>
+
 <script>
+let paginaActual = 0;
+const paginas = document.querySelectorAll('.pagina');
+
+function mostrarPagina(index){
+    paginas.forEach(p => p.classList.remove('activa'));
+    paginas[index].classList.add('activa');
+}
+
+function siguiente(){
+    if(paginaActual < paginas.length - 1){
+        paginaActual++;
+        mostrarPagina(paginaActual);
+    }
+}
+
+function anterior(){
+    if(paginaActual > 0){
+        paginaActual--;
+        mostrarPagina(paginaActual);
+    }
+}
+
 function mostrarPromesa(){
-    document.getElementById("promesa").style.display="block";
+    document.getElementById("promesa").style.display = "block";
 }
 </script>
 
