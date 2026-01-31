@@ -4,104 +4,92 @@
 <meta charset="UTF-8">
 <title>Carta de Amor</title>
 
-<!-- Tipografías elegantes -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Great+Vibes&display=swap" rel="stylesheet">
+<!-- Tipografías -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 body {
-    background: #2b2b2b;
+    background-color: #1f1f1f;
     margin: 0;
-    padding: 40px 0;
-    font-family: 'Playfair Display', serif;
+    padding: 60px 0;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-.carta {
-    max-width: 820px;
+.contenedor {
+    max-width: 760px;
     margin: auto;
-    background: #f7f1e3;
-    padding: 70px 80px;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    border: 1px solid #d6c8a1;
-    position: relative;
-}
-
-.carta:before {
-    content: "";
-    position: absolute;
-    inset: 10px;
-    border: 1px solid rgba(0,0,0,0.1);
-    pointer-events: none;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Great Vibes', cursive;
-    font-size: 3.5em;
-    margin-bottom: 50px;
-    color: #4b3b2b;
-}
-
-p {
-    font-size: 1.15em;
-    line-height: 1.9;
-    color: #3a2f25;
-    text-align: justify;
-    margin-bottom: 22px;
-}
-
-.fecha {
-    text-align: right;
-    font-style: italic;
-    margin-bottom: 40px;
+    background-color: #fbf7ee;
+    padding: 60px 70px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
 }
 
 .video {
-    margin: 40px 0;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 iframe {
     width: 100%;
-    height: 360px;
+    height: 380px;
     border: none;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #3b2f24;
+}
+
+.fecha {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #5a4a3a;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.9;
+    color: #2e241c;
+    margin-bottom: 26px;
+    text-align: justify;
 }
 
 .frase-final {
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: center;
     font-style: italic;
-    font-size: 1.3em;
-    color: #d4af37; /* amarillo */
+    font-size: 1.4em;
+    color: #e6c94f; /* amarillo */
 }
 
 .boton {
-    margin-top: 50px;
+    margin-top: 45px;
     text-align: center;
 }
 
 button {
-    background: transparent;
-    border: 2px solid #6a1b9a;
+    background: none;
+    border: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1em;
+    letter-spacing: 2px;
     color: #6a1b9a;
-    padding: 12px 30px;
-    font-size: 1em;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
 }
 
 button:hover {
-    background: #6a1b9a;
-    color: white;
+    text-decoration: underline;
 }
 
 .promesa {
     display: none;
-    margin-top: 30px;
+    margin-top: 25px;
     text-align: center;
-    font-size: 1.2em;
-    color: #6a1b9a; /* morado */
+    font-size: 1.3em;
+    color: #6a1b9a;
     font-style: italic;
 }
 </style>
@@ -109,77 +97,84 @@ button:hover {
 
 <body>
 
-<div class="carta">
-    <h1>Mi amor</h1>
-
-    <div class="fecha">Viernes, 30 de enero de 2026</div>
-
-    <p>
-        Hoy es viernes y el día se siente distinto porque no estás frente a mí.
-        Hay silencios que solo existen cuando te extraño, y este es uno de ellos.
-        Me haces falta de una manera cotidiana, profunda, inevitable.
-    </p>
-
-    <p>
-        Me hace falta verte a diario. Verte aunque sea un instante,
-        aunque sea desde lejos, aunque no podamos hablarnos como quisiéramos.
-        Tu presencia se volvió una necesidad del alma.
-    </p>
-
-    <p>
-        Anhelo volver a clases, y no por los horarios ni las materias,
-        sino porque ahí estás tú. Porque volver significa verte todos los días,
-        aunque sean solo cuatro o cinco horas.
-        Cuatro o cinco horas que le dan sentido a todo.
-    </p>
-
-    <p>
-        Extraño lo simple: las miradas robadas, las sonrisas discretas,
-        el saber que compartimos el mismo espacio.
-        Contigo, incluso lo cotidiano se vuelve eterno.
-    </p>
-
-    <p>
-        Mientras suena <em>Bajo la mesa</em>, pienso en ti.
-        En este amor que no siempre se grita,
-        pero que vive intenso, honesto y profundo.
-        Un amor que se queda, incluso cuando no te ve.
-    </p>
+<div class="contenedor">
 
     <div class="video">
         <iframe 
-            src="https://www.youtube.com/embed/DY4sUkpaCtI" 
+            src="https://www.youtube.com/embed/P6zC278fCDM"
             allow="autoplay; encrypted-media"
             allowfullscreen>
         </iframe>
     </div>
 
+    <div class="titulo">Mi amor</div>
+    <div class="fecha">Viernes, 30 de enero de 2026</div>
+
     <p>
-        Te amo con paciencia y con deseo.
-        Te amo en los días normales y en los viernes nostálgicos.
+        Hoy es viernes, y el día se siente distinto porque no estás frente a mí.
+        Hay una nostalgia tranquila en el aire, una que solo aparece cuando te extraño.
+        Me haces falta de una manera cotidiana, profunda, inevitable.
+    </p>
+
+    <p>
+        Me hace falta verte a diario. Verte aunque sea unos minutos,
+        aunque sea desde lejos, aunque no podamos hablar.
+        Tu presencia se volvió una necesidad del alma,
+        algo que ordena mis días sin pedir permiso.
+    </p>
+
+    <p>
+        Por eso anhelo volver a clases.
+        No por la rutina ni por las materias,
+        sino porque ahí estás tú.
+        Porque volver significa verte todos los días,
+        aunque sean solo cuatro o cinco horas…
+        horas que le dan sentido a todo.
+    </p>
+
+    <p>
+        Extraño compartir el mismo espacio,
+        cruzar miradas,
+        sentir que el mundo sigue su curso mientras mi corazón se queda contigo.
+        Contigo, incluso lo simple se vuelve eterno.
+    </p>
+
+    <p>
+        Mientras suena esta canción,
+        pienso en este amor que no siempre se muestra,
+        pero que vive intenso y sincero.
+        Un amor que se queda,
+        incluso cuando no te ve.
+    </p>
+
+    <p>
+        Te amo con calma y con profundidad.
+        Te amo en los días normales
+        y en los viernes donde la nostalgia pesa un poco más.
         Te amo con ganas de verte siempre,
-        de elegirte todos los días,
-        de seguir esperando sin cansarme.
+        de elegirte sin cansarme,
+        de seguir esperándote.
     </p>
 
     <div class="frase-final">
-        “Incluso cuando no te veo, mi corazón sabe exactamente dónde perteneces.”
+        “Amarte en silencio también es una forma de quedarme contigo.”
     </div>
 
     <div class="boton">
-        <button onclick="mostrarPromesa()">Mi promesa del día</button>
+        <button onclick="mostrarPromesa()">MI PROMESA DEL DÍA</button>
 
         <div class="promesa" id="promesa">
-            Prometo seguir eligiéndote cada día, incluso en la distancia,
-            incluso en la espera, incluso en el silencio.
+            Prometo seguir pensándote todos los días,
+            esperarte sin prisa
+            y elegirte incluso cuando no estás cerca.
         </div>
     </div>
+
 </div>
 
 <script>
 function mostrarPromesa() {
-    const promesa = document.getElementById("promesa");
-    promesa.style.display = "block";
+    document.getElementById("promesa").style.display = "block";
 }
 </script>
 
